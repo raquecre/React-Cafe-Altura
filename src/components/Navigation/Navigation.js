@@ -7,8 +7,8 @@ const Navigation = () => {
 	return (
 		<div className='Navigation d-flex bg-gray-950 text-white gap-10 p-3 items-center'>
 
-			<section className="webCafeDeAltura inline-flex gap-2 items-center ">
-				<Link to={'/'} className="text-2xl logoCafeDeAltura" >cafedealtura.com</Link>
+			<section className=" inline-flex gap-2 items-center ">
+				<Link to={'/'} className="text-2xl" >cafedealtura.com</Link>
 				<img src="./img/CoffeG.svg" />
 			</section>
 
