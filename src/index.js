@@ -5,15 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import { BrowserRouter as Router } from 'react-router-dom'; // <== IMPORT
+import { AllCoffeesContext } from './context/AllCoffees';
 
 
-// Next, wrap the <App /> with the <Router> and </Router> tags
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
-ReactDOM.render(
+root.render(
   <Router>
-    
+    <AllCoffeesContext>
       <App />
-  
+    </AllCoffeesContext>
   </Router>,
   document.getElementById("root")
 );

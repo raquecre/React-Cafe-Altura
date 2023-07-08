@@ -6,9 +6,11 @@ import Cart from './pages/pages/Cart';
 import ErrorPage from './pages/pages/ErrorPage';
 import Shop from './pages/pages/Shop';
 
+
 function App() {
   return (
     <div className="App">
+
       <Routes>
         <Route path='/' element={<Home/>} />
  
