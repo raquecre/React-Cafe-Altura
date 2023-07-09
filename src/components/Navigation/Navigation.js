@@ -25,9 +25,9 @@ const Navigation = () => {
 				<button type='btn' className='bg-gray-700 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 '> Iniciar Sesión</button>
 			</section>
 
-			<section class="navCart inline-flex">
+			<section className="navCart inline-flex">
 				<Link to={'/Cart'}>
-					<img name="shoppingBag" src="./img/shop.svg" />
+					<img src="./img/shop.svg" />
 				</Link>
 			</section>
 

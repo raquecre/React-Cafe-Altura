@@ -1,15 +1,15 @@
-# PlantTaze
+# ProductsCart
 
 <!-- STORY -->
 
 ## Introduction
 
-PlantTaze is an easy-to-use component.
+ProductsCart is an easy-to-use component.
 
 ## Usage
 
 ```javascript
-import { PlantTaze } from 'some-package-name';
+import { ProductsCart } from 'some-package-name';
 ```
 
 ## Example use
@@ -18,7 +18,7 @@ import { PlantTaze } from 'some-package-name';
 const myPage = props => {
   return (
     <main>
-      <PlantTaze />
+      <ProductsCart />
     </main>
   );
 };

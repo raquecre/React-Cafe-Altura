@@ -1,22 +1,27 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
 import { BrowserRouter as Router } from 'react-router-dom'; // <== IMPORT
-import { AllCoffeesContext } from './context/AllCoffees';
+import AllCoffeesContextProvider, { AllCoffeesContext } from './context/AllCoffees';
+import CartCoffeesContextProvider from './context/CoofeesInCart';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <Router>
-    <AllCoffeesContext>
-      <App />
-    </AllCoffeesContext>
-  </Router>,
-  document.getElementById("root")
+    <AllCoffeesContextProvider>
+      <CartCoffeesContextProvider>
+        <App />
+      </CartCoffeesContextProvider>
+    </AllCoffeesContextProvider>
+
+  </Router>
+
 );
 
 reportWebVitals();

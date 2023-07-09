@@ -13,9 +13,9 @@ const PlantTaze = () => {
 				<h1 className='text-5xl'>El mejor café del mundo, ahora en tu casa.</h1>
 				<p>Trabajamos con agricultores de todo el mundo para seleccionar los mejores granos de café y que
 					puedas viajar desde la comodidad de tu hogar.</p>
-				<div class="plantButtons">
+				<div >
 					<button className="text-white bg-gray-950 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2" id="plantTazeBlack">Descubrir orígenes</button>
-					<button class="text-white bg-green-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2" id="plantTazeGreen">Comprar café</button>
+					<button className="text-white bg-green-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2" id="plantTazeGreen">Comprar café</button>
 				</div>
 			</article>
 			<article className='p-4'>

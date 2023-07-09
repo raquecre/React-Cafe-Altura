@@ -13,18 +13,18 @@ const ContactUsForm = () => {
 			<p className='text-gray-600 m-5 p-3'>TAmbién puedes ponerte en contacto con nostros en nuestra dirección o a
 				través del teléfono de la tienda.</p>
 			<div className='text-gray-600 m-5'>
-				<p name="contactUsInfo" class="direction">742 Evergreen Terrace</p>
-				<p name="contactUsInfo" class="direction">Springfield, OR 12345</p>
+				<p >742 Evergreen Terrace</p>
+				<p >Springfield, OR 12345</p>
 			</div>
 
 			<div className='text-gray-600 m-5 flex flex-inline gap-3'>
-				<img class="contactPhone" src="./img/Phone.png" />
-				<p class="contactUsInfo" id="contactPhone"> +1 (555) 123-4567</p>
+				<img  src="./img/Phone.png" />
+				<p  id="contactPhone"> +1 (555) 123-4567</p>
 			</div>
 
 			<div className='text-gray-600 m-5 flex flex-inline gap-3'>
-				<img class="contactPhone" src="./img/MailGrey.svg" />
-				<p class="contactEmail">support@example.com</p>
+				<img  src="./img/MailGrey.svg" />
+				<p >support@example.com</p>
 			</div>
 			<div className='text-gray-600 m-5 flex flex-inline '>
 				<p className='text-gray-600 m-5 flex flex-inline '> ¿Buscas un trabajo? </p>

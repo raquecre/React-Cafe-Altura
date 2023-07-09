@@ -6,14 +6,14 @@ import LastOrigins from '../../components/LastOrigins/LastOrigins';
 
 const Shop = () => {
     return (
-        <body className="Cart-body">
+        <div className="Cart-body">
             <Navigation />
-            <LastOrigins/>
+            <LastOrigins />
             <BestConditions />
-            <h1>tienda</h1>
+            
             <Footer />
 
-        </body>
+        </div>
     )
 }
 

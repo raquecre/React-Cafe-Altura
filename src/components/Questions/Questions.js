@@ -11,7 +11,7 @@ const Questions = () => {
 			<div className="cardFaqs bg-white rounded  m-5 p-5">
 				<h3 className="cardFaqstittle text-xl flex flex-row justify-between" id="whoToOrderH3"> ¿Cómo hago el pedido? <img id="whoToOrderImg"
 					src="./img/arrowTop.svg" /> </h3>
-				<p class="faqsParagraph" id="whoToOrderP"> Viajamos constantemente para encontrar los mejores granos y a los
+				<p  id="whoToOrderP"> Viajamos constantemente para encontrar los mejores granos y a los
 					agricultores
 					más exigentes. Si
 					podemos ofrecerte estos precios es porque tratamos directamente con los productores de café, sin
@@ -22,7 +22,7 @@ const Questions = () => {
 			<div className="cardFaqs bg-white rounded  m-5 p-5">
 				<h3  className="cardFaqstittle text-xl flex flex-row justify-between" id="whyLowPricesH3">¿Por qué los precios son tan bajos? <img id="whyLowPricesImg"
 					src="./img/arrowTop.svg" /></h3>
-				<p class="faqsParagraph" id="whyLowPricesP">Viajamos constantemente para encontrar los mejores granos y a
+				<p  id="whyLowPricesP">Viajamos constantemente para encontrar los mejores granos y a
 					los agricultores
 					más exigentes. Si podemos ofrecerte estos precios es porque tratamos directamente con los
 					productores de café, sin intermediarios. Así obtenemos el mejor precio para ti y la persona que está
@@ -32,7 +32,7 @@ const Questions = () => {
 			<div className="cardFaqs bg-white rounded  m-5 p-5">
 				<h3  className="cardFaqstittle text-xl flex flex-row justify-between" id="coffeeInOfficeH3">¿Es posible enviar café a mi oficina? <img
 					id="coffeeInOfficeImg" src="./img/arrowTop.svg" /></h3>
-				<p class="faqsParagraph" id="coffeeInOfficeP">Puede ser</p>
+				<p id="coffeeInOfficeP">Puede ser</p>
 			</div>
 			<div className=' flex flex-row justify-center m-3 ' id="questions">
 				<p className='text-white'>Resolvemos tus dudas </p>

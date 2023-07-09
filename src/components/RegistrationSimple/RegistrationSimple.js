@@ -21,7 +21,7 @@ const RegistrationSimple = () => {
 			</article>
 
 			<article className=' flex flex-col mt-5'>
-				<textarea className="border">¿En qué podemos ayudarte?</textarea>
+				<textarea className="border" defaultValue="¿En qué podemos ayudarte?"/>
 			</article>
 
 			<label className=' m-5'> <input type="checkbox" /> Acepto la <a className='font-bold underline' > Política de Privacidad</a> y los <a className='font-bold underline'>Términos

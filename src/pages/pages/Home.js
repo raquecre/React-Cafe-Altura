@@ -10,7 +10,7 @@ import Footer from '../../components/Footer/Footer';
 
 const Home = () =>{
     return(
-        <body className="Home-body">
+        <div className="Home-body">
             <Navigation/>
             <PlantTaze/>
             <BestConditions/>
@@ -24,7 +24,7 @@ const Home = () =>{
             <Footer/>
 
 
-        </body>
+        </div>
     )
 }
 

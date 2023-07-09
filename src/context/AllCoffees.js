@@ -6,12 +6,16 @@ import React from "react";
 
 export const AllCoffeesContext = createContext();
 
-export default function AllCoffeesContextPrivider({ children }) {
-    const CoffeeApi = 'http://localhost:5050/books';
+export default function AllCoffeesContextProvider({ children }) {
+    const coffeeApi = 'http://localhost:5050/books';
     const [totalCoffees, setTotalCoffees] = useState([]);
 
     React.useEffect(() => {
-        axios.get(CoffeeApi).then((response) => {
+        axios({
+            url: coffeeApi,
+            method: 'get'
+         })
+        .then((response) => {
             setTotalCoffees(response.data);
         })
 
@@ -19,7 +23,7 @@ export default function AllCoffeesContextPrivider({ children }) {
 
 
     return (
-        <AllCoffeesContext.Provider value={{totalCoffees, setTotalCoffees}}>
+        <AllCoffeesContext.Provider value={{totalCoffees}}>
             {children}
         </AllCoffeesContext.Provider>
     )
