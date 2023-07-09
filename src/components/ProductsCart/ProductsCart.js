@@ -10,7 +10,7 @@ const ProductsCart = () => {
 			<p className='font-bold'>Productos</p>
 			{cartCoffees.map((coffee) => {
 				return (
-					<div className='flex items-center  border w-fit pl-5' >
+					<div className='flex items-center  border w-fit pl-5' key={coffee.id} >
 						<button className='text-xl font-bold m-2'> + </button>
 						<p className='bg-gray-200 '>nºcafés</p>
 						<button className=' text-xl font-bold m-2'>-</button>

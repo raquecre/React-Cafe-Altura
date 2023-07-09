@@ -4,9 +4,8 @@ import { CartCoffeesContext } from '../../context/CoofeesInCart';
 
 
 const Navigation = () => {
-	const { cartCoffees } = useContext(CartCoffeesContext)
+	const { totalCoffeesInCart } = useContext(CartCoffeesContext)
 	
-	console.log(cartCoffees.length);
 	return (
 		<div className='Navigation d-flex bg-gray-950 text-white gap-10 p-3 items-center'>
 
@@ -31,7 +30,7 @@ const Navigation = () => {
 			<section className="navCart inline-flex">
 				<Link to={'/Cart'} className='flex color-'>
 					<img src="./img/shop.svg" />
-					<p className='bg-gray-800 p-3 m-1 rounded-full'> {cartCoffees.length} </p>
+					<p className='bg-gray-800 p-3 m-1 rounded-full'> {totalCoffeesInCart()} </p>
 				</Link>
 			</section>
 
