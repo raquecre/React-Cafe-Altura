@@ -7,6 +7,7 @@ import CoffeeShop from '../../components/CoffeeShop/CoffeeShop';
 import ContactUsForm from '../../components/ContactUsForm/ContactUsForm';
 import RegistrationSimple from '../../components/RegistrationSimple';
 import Footer from '../../components/Footer/Footer';
+import NewsCoffees from '../../components/newsCoffees/newsCoffees';
 
 const Home = () =>{
     return(
@@ -14,6 +15,7 @@ const Home = () =>{
             <Navigation/>
             <PlantTaze/>
             <BestConditions/>
+            <NewsCoffees/>
             {/* //TODO falta hoja con los 4 cafés */}
             <Questions/>
             <CoffeeShop/>

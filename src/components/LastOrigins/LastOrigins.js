@@ -15,7 +15,7 @@ const LastOrigins = () => {
 			<div className='allcoffees flex'>
 				{totalCoffees.map((coffee) => {
 					return (
-						<div className='IndvCoffee border p-3 text-center rounded m-5 w-fit ' key={coffee.id}>
+						<div className='IndvCoffee border p-3 text-center rounded m-5 w-fit hover:bg-gray-100' key={coffee.id}>
 
 							<img src={coffee.image} alt='image-coffee-bag' />
 							<p className=' font-bold'>{coffee.name}</p>

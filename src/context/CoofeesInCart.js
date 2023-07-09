@@ -3,6 +3,8 @@ import { createContext, useState } from "react"
 
 //~  lógica añadir un café más
 //~  lógica quitar un café
+//~ suma total de los cafés
+
 export const CartCoffeesContext = createContext();
 
 export default function CartCoffeesContextProvider({ children }) {
@@ -12,12 +14,18 @@ export default function CartCoffeesContextProvider({ children }) {
         setCartCoffees([...cartCoffees, coffee])
     }
 
-    const deleteCart = (coffee) =>{
-        const newCart = cartCoffees.filter(coffeeSelected => coffeeSelected !== coffee)
+    const sumCoffee = (coffee) => {
+        
+    }
+
+    const sumCartPrice = (coffee) => {
+        let totalSum = 0;
+        totalSum += coffee.price
+
     }
 
     return (
-        <CartCoffeesContext.Provider value={{ cartCoffees, setCartCoffees, addCart, deleteCart }}>
+        <CartCoffeesContext.Provider value={{ cartCoffees, setCartCoffees, addCart, sumCartPrice }}>
             {children}
         </CartCoffeesContext.Provider>
     )
