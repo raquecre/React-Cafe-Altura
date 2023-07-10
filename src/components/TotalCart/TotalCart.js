@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const TotalCart = () => {
     const { sumPriceCoffee } = useContext(CartCoffeesContext)
-
+	
 
 	return (
 		<div className='totalCart bg-gray-100 w-fit' >
@@ -22,7 +22,7 @@ const TotalCart = () => {
 
 			<div className="flex p-2">
 				<p className=' mr-5'>ENVÍO</p>
-				<p className='font-bold ml-5'>,00 €</p>
+				<p className='font-bold ml-5'></p>
 			</div>
 
 			<hr className='m-4'></hr>

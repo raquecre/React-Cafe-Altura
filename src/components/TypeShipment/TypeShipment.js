@@ -1,17 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 
 const TypeShipment = () => {
-	
+	const [typeShipmentSelected, setTypeShipmentSelected] = useState();
+	let typeSelected = 0;
+	console.log(typeSelected);
+
+	const upload = event => setTypeShipmentSelected(event.value)
+
+
 
 	return (
 
-		<div className='TypeShipment w-fit mt-5'>
+		<div className='TypeShipment w-fit mt-5'  >
 			<h1 className='text-lg font-bold m-2'>Seleccionar envío</h1>
 
-			<div className='flex justify-stretch gap-5 m-5'>
+			<div className='form-check flex justify-stretch gap-5 m-5'>
 
-				<input  id="freeSend" type="radio" name="typeOfSend" value="0" />
+				<input id="freeSend" type="radio" name="typeOfSend" value="0" checked={true} />
 
 				<div className='flex flex-col '>
 					<p className='font-bold'> Envío 5-7días</p>
@@ -21,8 +27,8 @@ const TypeShipment = () => {
 				<h3 className='font-bold'>GRATIS</h3>
 			</div>
 
-			<div className='flex justify-stretch  gap-5 m-5'>
-				<input className='' id="cost9" type="radio" name="typeOfSend" value="9" />
+			<div className='form-check flex justify-stretch  gap-5 m-5'>
+				<input className='' id="cost9" type="radio" name="typeOfSend" value="9"   />
 
 				<div className='flex flex-col align-center'  >
 					<p className='font-bold' >Envío urgente 24h</p>

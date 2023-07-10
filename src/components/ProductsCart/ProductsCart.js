@@ -3,16 +3,18 @@ import { CartCoffeesContext } from '../../context/CoofeesInCart';
 
 
 const ProductsCart = () => {
-	const { cartCoffees } = useContext(CartCoffeesContext)
+	const {totalBagsCoffees, cartCoffees, sumCoffeeBags } = useContext(CartCoffeesContext)
+
 	return (
 
 		<div className='ProductsCart'>
 			<p className='font-bold'>Productos</p>
 			{cartCoffees.map((coffee) => {
+				console.log(coffee.bags);
 				return (
 					<div className='flex items-center  border w-fit pl-5' key={coffee.id} >
-						<button className='text-xl font-bold m-2'> + </button>
-						<p className='bg-gray-200 '>nºcafés</p>
+						<button onClick={() => {sumCoffeeBags(coffee)}} className='text-xl font-bold m-2'> + </button>
+						<p className='bg-gray-200 '>{coffee.bags}</p>
 						<button className=' text-xl font-bold m-2'>-</button>
 
 						<img className='h-20' src={coffee.image} />

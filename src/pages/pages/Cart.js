@@ -13,7 +13,7 @@ const Cart = () => {
     return (
         <div className="Cart-body">
             <Navigation />
-            <p className='text-3xl text-green-800 text-center'>Cesta ({totalCoffeesInCart()}) </p>
+            <p className='text-3xl text-green-800 text-center mt-5'>Cesta ({totalCoffeesInCart()}) </p>
             <div className='flex justify-around'>
                 <div className='flex flex-col '>
                     <ProductsCart />

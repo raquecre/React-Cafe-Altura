@@ -9,11 +9,14 @@ export const CartCoffeesContext = createContext();
 
 export default function CartCoffeesContextProvider({ children }) {
     const [cartCoffees, setCartCoffees] = useState([]);
+    const [totalBagsCoffees, setTotalBagsCoffees] = useState();
+
+    //?----------TotalCart ---------------------
 
     const totalCoffeesInCart = () => {
         return cartCoffees.length
     }
-    //?________________AddCart____________________________________________
+    //?-----------AddCart coffees no repeat---------------------
 
     const isCoffeRepeated = (coffeeInfo) => {
         for (const coffee of cartCoffees) {
@@ -29,7 +32,8 @@ export default function CartCoffeesContextProvider({ children }) {
             setCartCoffees([...cartCoffees, coffeeInfo]);
         }
     }
-    //?________________________________________________________________
+
+    //?-------------Sum price coffee-------------------
 
     const sumPriceCoffee = () => {
         let total = 0;
@@ -38,14 +42,59 @@ export default function CartCoffeesContextProvider({ children }) {
 
     }
 
-    /* const restCoffee = (coffee) => {
+    //?-----------counter coffees---------------------
+
+
+    /*   handleClick = (p) => {
+          setTotal(prevState=>prevState+p.price);
+          let product = products.find((pr) => pr.name === p.name);
+          product.unit += 1;
+          const updatedProducts = products.map(p => {
+              if (product.name === p.name) return product;
+      
+              return p;
+          });
+      
+          setProducts(updatedProducts);
+      } */
+
+//! ni suma ni resta
+    const sumCoffeeBags = (selectCoffee) => {
+        /*   setCartCoffees(prevState => prevState + selectCoffee.bags);
+          let product = cartCoffees.find((coffee) => coffee.name === selectCoffee.name);
+          product.bags += 1;
+          const updatedCoffees = cartCoffees.map((pr) => {
+              if (product.name === selectCoffee.name) return product
+          })
+          return selectCoffee */
+        /* let itemCount = 1;
+        for (const [key, value] of Object.entries(selectCoffee)) {
+            itemCount += selectCoffee[value].bags
+            console.log(itemCount);
+        } */
+
+/* //? este ejempo lo que hace es crea un nuevo estado con las caracteristicas de nombre, cantidad en el carro y si un booleano de si ha sido introducido en el carrito.
+        const newItems = [...items];
+
+        newItems[index].quantity++;
+
+        setItems(newItems); */
 
     }
- */
+
+
+
+
+
+
+
+
+    
+
 
 
     return (
-        <CartCoffeesContext.Provider value={{sumPriceCoffee, cartCoffees, totalCoffeesInCart, setCartCoffees, addToCartNoRepeat }}>
+        <CartCoffeesContext.Provider value={{ totalBagsCoffees, setTotalBagsCoffees, totalBagsCoffees, sumCoffeeBags, sumPriceCoffee, cartCoffees, totalCoffeesInCart, setCartCoffees, addToCartNoRepeat }}>
             {children}
         </CartCoffeesContext.Provider>
     )
