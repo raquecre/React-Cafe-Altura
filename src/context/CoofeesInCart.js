@@ -37,23 +37,34 @@ export default function CartCoffeesContextProvider({ children }) {
 
     const sumPriceCoffee = () => {
         let total = 0;
-        cartCoffees.map((coffee) => total += coffee.price)
+        cartCoffees.map((coffee) => total += coffee.price *coffee.bags )
         return total
 
     }
 
     //?-----------counter coffees---------------------
-  
+
+    //?---SUM---------------------
     const sumCoffeeBags = (coffeSelect) => {
         cartCoffees.map((cartItem) => {
-                if (cartItem.name === coffeSelect.name) {
+            if (cartItem.name === coffeSelect.name) {
                 cartItem.bags += 1;
                 setCartCoffees([...cartCoffees]);
             }
         }
         )
+    }
 
 
+    //?---Rest---------------------
+    const restCoffeeBags = (coffeSelect) => {
+        cartCoffees.map((cartItem) => {
+            if (cartItem.name === coffeSelect.name ) {
+                cartItem.bags -= 1;
+                setCartCoffees([...cartCoffees]);
+            }
+        }
+        )
     }
 
 
@@ -67,7 +78,7 @@ export default function CartCoffeesContextProvider({ children }) {
 
 
     return (
-        <CartCoffeesContext.Provider value={{ onChangeValue, sumCoffeeBags, totalBagsCoffees, setTotalBagsCoffees, totalBagsCoffees, sumCoffeeBags, sumPriceCoffee, cartCoffees, totalCoffeesInCart, setCartCoffees, addToCartNoRepeat }}>
+        <CartCoffeesContext.Provider value={{ onChangeValue,restCoffeeBags, sumCoffeeBags, setTotalBagsCoffees, totalBagsCoffees, sumCoffeeBags, sumPriceCoffee, cartCoffees, totalCoffeesInCart, setCartCoffees, addToCartNoRepeat }}>
             {children}
         </CartCoffeesContext.Provider>
     )

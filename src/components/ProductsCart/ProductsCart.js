@@ -3,7 +3,7 @@ import { CartCoffeesContext } from '../../context/CoofeesInCart';
 
 
 const ProductsCart = () => {
-	const {totalBagsCoffees, cartCoffees, sumCoffeeBags } = useContext(CartCoffeesContext)
+	const { totalBagsCoffees, cartCoffees, restCoffeeBags, sumCoffeeBags } = useContext(CartCoffeesContext)
 
 	return (
 
@@ -13,16 +13,16 @@ const ProductsCart = () => {
 				console.log(coffee.bags);
 				return (
 					<div className='flex items-center  border w-fit pl-5' key={coffee.id} >
-						<button onClick={() => {sumCoffeeBags(coffee)}} className='text-xl font-bold m-2'> + </button>
+						<button onClick={() => { sumCoffeeBags(coffee) }} className='text-xl font-bold m-2'> + </button>
 						<p className='bg-gray-200 p-1 rounded-full'>{coffee.bags}</p>
-						<button className=' text-xl font-bold m-2'>-</button>
+						<button onClick={() => { restCoffeeBags(coffee) }} className=' text-xl font-bold m-2'>-</button>
 
 						<img className='h-20' src={coffee.image} />
 						<div className='flex-col pl-5'>
 							<p className='font-bold' >{coffee.name}</p>
 							<p >Paquete de café, 250gr</p>
 						</div>
-						<p className='text-lg font-bold pl-5' >{coffee.price},00€</p>
+						<p className='text-lg font-bold pl-5' >{coffee.price * coffee.bags},00€</p>
 					</div>
 				)
 			})}
