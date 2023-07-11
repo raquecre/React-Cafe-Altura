@@ -60,7 +60,7 @@ export default function CartCoffeesContextProvider({ children }) {
     const restCoffeeBags = (coffeSelect) => {
         cartCoffees.map((cartItem) => {
             if (cartItem.name === coffeSelect.name ) {
-                cartItem.bags -= 1;
+                cartItem.bags >= 1 ? cartItem.bags -= 1 : cartItem.bags = 0 /* //TODO FALTA FUNCION DE DELETE */
                 setCartCoffees([...cartCoffees]);
             }
         }
@@ -69,10 +69,10 @@ export default function CartCoffeesContextProvider({ children }) {
 
 
     //?----------typeShipment ---------------------
-    const [typeShipment, setTypeShipment] = useState('')
+    const [typeShipment, setTypeShipment] = useState()
 
     function onChangeValue(event) {
-        setTypeShipment(event.target.value)
+        setTypeShipment([event.target.value])
         console.log(typeShipment);
     }
 

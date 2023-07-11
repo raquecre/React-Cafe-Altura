@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Form } from 'react-router-dom';
+import { CartCoffeesContext } from '../../context/CoofeesInCart';
 
 
 const TypeShipment = () => {
-	const [onChangeValue, typeShipmentSelected, setTypeShipmentSelected] = useState();
+	const { onChangeValue } = useContext(CartCoffeesContext);
 
-	
+
 	return (
 
-		<form className='TypeShipment w-fit mt-5' onChange={()=> onChangeValue()} >
+		<form className='TypeShipment w-fit mt-5' onChange={() => onChangeValue()} >
 			<h1 className='text-lg font-bold m-2'>Seleccionar envío</h1>
-			
+
 
 
 			<div className='form-check flex justify-stretch gap-5 m-5'>
@@ -26,7 +27,7 @@ const TypeShipment = () => {
 			</div>
 
 			<div className='form-check flex justify-stretch  gap-5 m-5'>
-				<input  id="cost9" type="radio" name="typeOfSend" value="9"  />
+				<input id="cost9" type="radio" name="typeOfSend" value="9" />
 
 				<label className='flex flex-col align-center'  >
 					<p className='font-bold' >Envío urgente 24h</p>
