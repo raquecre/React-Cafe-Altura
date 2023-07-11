@@ -32,6 +32,12 @@ export default function CartCoffeesContextProvider({ children }) {
             setCartCoffees([...cartCoffees, coffeeInfo]);
         }
     }
+    //?-------------  TOTAL     CART  -------------------
+    const totalSumCart = () => {
+        let total = 0;
+       total = +sumPriceCoffee() + +typeShipment
+        return total 
+    }
 
     //?-------------Sum price coffee-------------------
 
@@ -67,18 +73,17 @@ export default function CartCoffeesContextProvider({ children }) {
         )
     }
 
+    //?---------------ctypeShipment--------------------------
 
-    //?----------typeShipment ---------------------
-    const [typeShipment, setTypeShipment] = useState()
+    const [typeShipment, setTypeShipment] = useState("0")
 
-    function onChangeValue(event) {
-        setTypeShipment([event.target.value])
-        console.log(typeShipment);
-    }
-
+    const onChangeValue = e => {
+        setTypeShipment(e.target.value)
+      }
+      console.log(typeShipment);
 
     return (
-        <CartCoffeesContext.Provider value={{ onChangeValue,restCoffeeBags, sumCoffeeBags, setTotalBagsCoffees, totalBagsCoffees, sumCoffeeBags, sumPriceCoffee, cartCoffees, totalCoffeesInCart, setCartCoffees, addToCartNoRepeat }}>
+        <CartCoffeesContext.Provider value={{ totalSumCart, typeShipment, setTypeShipment,onChangeValue,restCoffeeBags, sumCoffeeBags, setTotalBagsCoffees, totalBagsCoffees, sumCoffeeBags, sumPriceCoffee, cartCoffees, totalCoffeesInCart, setCartCoffees, addToCartNoRepeat }}>
             {children}
         </CartCoffeesContext.Provider>
     )

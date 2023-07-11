@@ -4,20 +4,19 @@ import { CartCoffeesContext } from '../../context/CoofeesInCart';
 
 
 const TypeShipment = () => {
-	const { onChangeValue } = useContext(CartCoffeesContext);
+	const { typeShipment, setTypeShipment, onChangeValue } = useContext(CartCoffeesContext);
 
-
+	
 	return (
-
-		<form className='TypeShipment w-fit mt-5' onChange={() => onChangeValue()} >
+		<div className='TypeShipment w-fit mt-5'>
+			
 			<h1 className='text-lg font-bold m-2'>Seleccionar envío</h1>
-
-
 
 			<div className='form-check flex justify-stretch gap-5 m-5'>
 
-				<input id="freeSend" type="radio" name="typeOfSend" value="0" />
-
+				{/* //& */}
+				<input id="freeSend" type="radio" name="typeOfSend" value="0" onChange={onChangeValue} checked={typeShipment === "0"}/>
+		
 				<label className='flex flex-col '>
 					<p className='font-bold'> Envío 5-7días</p>
 					<p>Opción estándar sin seguimiento</p>
@@ -27,7 +26,9 @@ const TypeShipment = () => {
 			</div>
 
 			<div className='form-check flex justify-stretch  gap-5 m-5'>
-				<input id="cost9" type="radio" name="typeOfSend" value="9" />
+
+				{/* //& */}
+				<input id="cost9" type="radio" name="typeOfSend" value="9" onChange={onChangeValue} checked={typeShipment === "9"} />
 
 				<label className='flex flex-col align-center'  >
 					<p className='font-bold' >Envío urgente 24h</p>
@@ -38,7 +39,9 @@ const TypeShipment = () => {
 				<h3 className='font-bold ' > 9,00€</h3>
 			</div>
 
-		</form>
+			
+		</div>
+		
 	)
 }
 
