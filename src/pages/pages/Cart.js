@@ -20,9 +20,8 @@ const Cart = () => {
                     <TypeShipment />
                 </div>
                 <TotalCart />
-
             </div>
-
+            
         </div>
     )
 }

@@ -43,58 +43,31 @@ export default function CartCoffeesContextProvider({ children }) {
     }
 
     //?-----------counter coffees---------------------
+  
+    const sumCoffeeBags = (coffeSelect) => {
+        cartCoffees.map((cartItem) => {
+                if (cartItem.name === coffeSelect.name) {
+                cartItem.bags += 1;
+                setCartCoffees([...cartCoffees]);
+            }
+        }
+        )
 
-
-    /*   handleClick = (p) => {
-          setTotal(prevState=>prevState+p.price);
-          let product = products.find((pr) => pr.name === p.name);
-          product.unit += 1;
-          const updatedProducts = products.map(p => {
-              if (product.name === p.name) return product;
-      
-              return p;
-          });
-      
-          setProducts(updatedProducts);
-      } */
-
-//! ni suma ni resta
-    const sumCoffeeBags = (selectCoffee) => {
-        /*   setCartCoffees(prevState => prevState + selectCoffee.bags);
-          let product = cartCoffees.find((coffee) => coffee.name === selectCoffee.name);
-          product.bags += 1;
-          const updatedCoffees = cartCoffees.map((pr) => {
-              if (product.name === selectCoffee.name) return product
-          })
-          return selectCoffee */
-        /* let itemCount = 1;
-        for (const [key, value] of Object.entries(selectCoffee)) {
-            itemCount += selectCoffee[value].bags
-            console.log(itemCount);
-        } */
-
-/* //? este ejempo lo que hace es crea un nuevo estado con las caracteristicas de nombre, cantidad en el carro y si un booleano de si ha sido introducido en el carrito.
-        const newItems = [...items];
-
-        newItems[index].quantity++;
-
-        setItems(newItems); */
 
     }
 
 
+    //?----------typeShipment ---------------------
+    const [typeShipment, setTypeShipment] = useState('')
 
-
-
-
-
-
-    
-
+    function onChangeValue(event) {
+        setTypeShipment(event.target.value)
+        console.log(typeShipment);
+    }
 
 
     return (
-        <CartCoffeesContext.Provider value={{ totalBagsCoffees, setTotalBagsCoffees, totalBagsCoffees, sumCoffeeBags, sumPriceCoffee, cartCoffees, totalCoffeesInCart, setCartCoffees, addToCartNoRepeat }}>
+        <CartCoffeesContext.Provider value={{ onChangeValue, sumCoffeeBags, totalBagsCoffees, setTotalBagsCoffees, totalBagsCoffees, sumCoffeeBags, sumPriceCoffee, cartCoffees, totalCoffeesInCart, setCartCoffees, addToCartNoRepeat }}>
             {children}
         </CartCoffeesContext.Provider>
     )

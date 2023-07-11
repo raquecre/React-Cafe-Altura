@@ -14,7 +14,7 @@ const ProductsCart = () => {
 				return (
 					<div className='flex items-center  border w-fit pl-5' key={coffee.id} >
 						<button onClick={() => {sumCoffeeBags(coffee)}} className='text-xl font-bold m-2'> + </button>
-						<p className='bg-gray-200 '>{coffee.bags}</p>
+						<p className='bg-gray-200 p-1 rounded-full'>{coffee.bags}</p>
 						<button className=' text-xl font-bold m-2'>-</button>
 
 						<img className='h-20' src={coffee.image} />

@@ -21,6 +21,8 @@ export default function AllCoffeesContextProvider({ children }) {
 
     }, [])
 
+   
+
 
     return (
         <AllCoffeesContext.Provider value={{totalCoffees}}>
