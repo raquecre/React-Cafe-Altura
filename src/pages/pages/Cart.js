@@ -11,7 +11,7 @@ const Cart = () => {
     const { totalCoffeesInCart } = useContext(CartCoffeesContext)
 
     return (
-        <div className="Cart-body">
+        <div className="Cart-body mb-10 ">
             <Navigation />
             <p className='text-3xl text-green-800 text-center mt-5'>Cesta ({totalCoffeesInCart()}) </p>
             <div className='flex justify-around'>
@@ -19,7 +19,7 @@ const Cart = () => {
                     <ProductsCart />
                     <TypeShipment />
                 </div>
-                <TotalCart />
+                <TotalCart className='w-fit' />
             </div>
             
         </div>

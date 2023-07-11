@@ -7,7 +7,7 @@ const Navigation = () => {
 	const { totalCoffeesInCart } = useContext(CartCoffeesContext)
 	
 	return (
-		<div className='Navigation d-flex bg-gray-950 text-white gap-10 p-3 items-center'>
+		<div className='Navigation d-flex bg-gray-950 text-white gap-10 p-3 flex items-center'>
 
 			<section className=" inline-flex gap-2 items-center ">
 				<Link to={'/'} className="text-2xl" >cafedealtura.com</Link>
@@ -22,9 +22,9 @@ const Navigation = () => {
 				<p> Contacto</p>
 			</section>
 
-			<section className="navContactPhone inline-flex  gap-10">
+			<section className="navContactPhone flex items-center gap-10">
 				<p><img src='' />+34 919 49 05 18</p>
-				<button type='btn' className='bg-gray-700 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 '> Iniciar Sesión</button>
+				<button type='btn' className='bg-gray-700 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2'> Iniciar Sesión</button>
 			</section>
 
 			<section className="navCart inline-flex">

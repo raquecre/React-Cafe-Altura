@@ -4,12 +4,12 @@ import React from 'react';
 const BestConditions = () => {
 
 	return (
-		<section className="cardsBestConditions bg-blue-300">
+		<section className="cardsBestConditions bg-blue-200">
 
 			<div className="cardsBestConditionsTitle ">
 				<h3 className='text-white text-xl text-center font-bold'> Café con las mejores condiciones </h3>
 			</div>
-			<div className="cardsBestConditionsCoffee flex flex-row">
+			<div className="cardsBestConditionsCoffee grid grid-cols-4  gap-4 place-content-center ">
 
 				<article className="cardsBestConditions bg-white text-center rounded  m-5">
 					<button className='bg-green-800 m-3 p-2 rounded' ><img src="./img/IconChecklist.png" /></button>
