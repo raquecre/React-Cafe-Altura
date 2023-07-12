@@ -19,6 +19,10 @@ const SelectShippingMethod = () => {
 				<label id="QuestionName">Apellidos</label>
 				<input className="border m-2 rounded" type="text" />
 			</div>
+			<div className=' flex flex-col'>
+				<label id="QuestionName">Teléfono</label>
+				<input className="border m-2 rounded" type="number" placeholder='+34 600 600 600 ' />
+			</div>
 
 			<div className=' flex flex-col'>
 				<label id="QuestionName">Email</label>

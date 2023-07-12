@@ -96,9 +96,12 @@ export default function CartCoffeesContextProvider({ children }) {
         setTypeShipment(e.target.value)
     }
     
+      //?---------------IVA--------------------------
+    const ivaCalculate = () => totalSumCart()*0.21.toFixed(2)
+
 
     return (
-        <CartCoffeesContext.Provider value={{  deleteCoffee, totalSumCart, typeShipment, setTypeShipment, onChangeValue, restCoffeeBags, sumCoffeeBags, setTotalBagsCoffees, totalBagsCoffees, sumCoffeeBags, sumPriceCoffee, cartCoffees, totalCoffeesInCart, setCartCoffees, addToCartNoRepeat }}>
+        <CartCoffeesContext.Provider value={{ ivaCalculate, deleteCoffee, totalSumCart, typeShipment, setTypeShipment, onChangeValue, restCoffeeBags, sumCoffeeBags, setTotalBagsCoffees, totalBagsCoffees, sumCoffeeBags, sumPriceCoffee, cartCoffees, totalCoffeesInCart, setCartCoffees, addToCartNoRepeat }}>
             {children}
         </CartCoffeesContext.Provider>
     )

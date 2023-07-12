@@ -9,7 +9,7 @@ import TotalCart from '../../components/TotalCart/TotalCart';
 const Cart = () => {
 
     const { totalCoffeesInCart } = useContext(CartCoffeesContext)
-
+    
     return (
         <div className="Cart-body mb-10 ">
             <Navigation />

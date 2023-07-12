@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 
 
 const TotalCart = () => {
-	const { totalSumCart, typeShipment, sumPriceCoffee } = useContext(CartCoffeesContext)
+	const { ivaCalculate, totalSumCart, typeShipment, sumPriceCoffee } = useContext(CartCoffeesContext)
 
 
 	return (
-		<div className='totalCart bg-gray-100 w-fit pt-4 pl-2 ' >
+		<div className='totalCart bg-gray-100 pt-4 pl-2 ' >
 			<h1 className='font-bold text-lg'>Total del carrito</h1>
 			<hr className='m-4'></hr>
 
@@ -31,8 +31,10 @@ const TotalCart = () => {
 				<p className=' mr-5'>TOTAL</p>
 				<p className='font-bold ml-5'>{totalSumCart()},00€</p>
 			</div>
-
-			{/* //& parte dinámica de la pág */}
+			<div className='mb-5 text-sm flex justify-end text-gray-500'>
+				<p> Incluye  {ivaCalculate()} € de IVA</p>
+			</div>
+			
 
 
 			{/* <div className='mt-5 pl-2'>

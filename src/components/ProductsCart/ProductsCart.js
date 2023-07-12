@@ -1,10 +1,10 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { CartCoffeesContext } from '../../context/CoofeesInCart';
 
 
 const ProductsCart = () => {
 	const { showDelete, deleteCoffee, totalBagsCoffees, cartCoffees, restCoffeeBags, sumCoffeeBags } = useContext(CartCoffeesContext)
-
+	
 	return (
 
 		<div className='ProductsCart'>
