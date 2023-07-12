@@ -8,7 +8,7 @@ const Checkout = () => {
     return (
         <div className="checkOut ">
             <Navigation />
-            <p className='text-3xl text-green-800 text-center'>Chechout </p>
+            <p className='text-3xl text-green-800 text-center'>Checkhout </p>
 
             <div className="componentsSelectMethod flex justify-around">
 
