@@ -32,18 +32,20 @@ export default function CartCoffeesContextProvider({ children }) {
             setCartCoffees([...cartCoffees, coffeeInfo]);
         }
     }
+
+
     //?-------------  TOTAL     CART  -------------------
     const totalSumCart = () => {
         let total = 0;
-       total = +sumPriceCoffee() + +typeShipment
-        return total 
+        total = +sumPriceCoffee() + +typeShipment
+        return total
     }
 
     //?-------------Sum price coffee-------------------
 
     const sumPriceCoffee = () => {
         let total = 0;
-        cartCoffees.map((coffee) => total += coffee.price *coffee.bags )
+        cartCoffees.map((coffee) => total += coffee.price * coffee.bags)
         return total
 
     }
@@ -65,13 +67,26 @@ export default function CartCoffeesContextProvider({ children }) {
     //?---Rest---------------------
     const restCoffeeBags = (coffeSelect) => {
         cartCoffees.map((cartItem) => {
-            if (cartItem.name === coffeSelect.name ) {
-                cartItem.bags >= 1 ? cartItem.bags -= 1 : cartItem.bags = 0 /* //TODO FALTA FUNCION DE DELETE */
-                setCartCoffees([...cartCoffees]);
+            if (cartItem.name === coffeSelect.name) {
+                if (cartItem.bags >= 1) {
+                    cartItem.bags -= 1
+                } else {
+                   
+                    deleteCoffee(cartItem);
+                }
+
             }
         }
         )
     }
+    //?----------delete coffee  ---------------------
+
+    const deleteCoffee = (coffeinfo) => {
+        const newCart = cartCoffees.filter(coffeeDelete => coffeeDelete !== coffeinfo)
+                                            
+        setCartCoffees(newCart)
+    }
+
 
     //?---------------ctypeShipment--------------------------
 
@@ -79,11 +94,11 @@ export default function CartCoffeesContextProvider({ children }) {
 
     const onChangeValue = e => {
         setTypeShipment(e.target.value)
-      }
-      console.log(typeShipment);
+    }
+    
 
     return (
-        <CartCoffeesContext.Provider value={{ totalSumCart, typeShipment, setTypeShipment,onChangeValue,restCoffeeBags, sumCoffeeBags, setTotalBagsCoffees, totalBagsCoffees, sumCoffeeBags, sumPriceCoffee, cartCoffees, totalCoffeesInCart, setCartCoffees, addToCartNoRepeat }}>
+        <CartCoffeesContext.Provider value={{  deleteCoffee, totalSumCart, typeShipment, setTypeShipment, onChangeValue, restCoffeeBags, sumCoffeeBags, setTotalBagsCoffees, totalBagsCoffees, sumCoffeeBags, sumPriceCoffee, cartCoffees, totalCoffeesInCart, setCartCoffees, addToCartNoRepeat }}>
             {children}
         </CartCoffeesContext.Provider>
     )
