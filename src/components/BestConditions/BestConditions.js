@@ -4,9 +4,9 @@ import React from 'react';
 const BestConditions = () => {
 
 	return (
-		<section className="cardsBestConditions bg-blue-200">
+		<section className="cardsBestConditions bg-no-repeat bg-center bg-[url('https://storage.googleapis.com/fir-api-3b1b0.appspot.com/backCooffee.jpeg?GoogleAccessId=service-696062924376@gcp-sa-firebasestorage.iam.gserviceaccount.com&Expires=1689170923&Signature=OZVANJB/9hLS7n4bj7tobitAvJbQEQrAMBxpkYB70kRfTF/6gLET3Fph7LmmNExibRhFIwY2YHEdQFZUPTpg35NYT8zonO6Qit2e38G46SaW%2BilkvLyV6Zi3nczw9yM2uku06QGSmEEU2SWFPx/eqRVWCKCzgYcevahg%2BBiPIQRKjiTi5sgm35TvNLWyw2HQw6y26MBoVxWkGADswA9LKgzw8GiHseYnzRdi8B0HmNdq08lyMQIV2agdgmqIp/zR8k4reTGWOO%2BZYo2FtfiMbJ/aJ%2Bi9Y6M7ZzXrcY3wXq0wsuEbivH9EaHB7BGnBNquI9QIk1lNRIHYEh5sVhfgjQ%3D%3D')]">
 
-			<div className="cardsBestConditionsTitle ">
+			<div className="cardsBestConditionsTitle  ">
 				<h3 className='text-white text-xl text-center font-bold  '> Café con las mejores condiciones </h3>
 			</div>
 			<div className="cardsBestConditionsCoffee grid grid-cols-3 gap-4 place-content-center  ">

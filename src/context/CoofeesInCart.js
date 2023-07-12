@@ -10,11 +10,12 @@ export const CartCoffeesContext = createContext();
 export default function CartCoffeesContextProvider({ children }) {
     const [cartCoffees, setCartCoffees] = useState([]);
     const [totalBagsCoffees, setTotalBagsCoffees] = useState();
+    const [showDelete, setShowDelete] = useState(true);
 
     //?----------TotalCart ---------------------
 
     const totalCoffeesInCart = () => {
-        return cartCoffees.length
+        return cartCoffees.length 
     }
     //?-----------AddCart coffees no repeat---------------------
 
@@ -97,11 +98,11 @@ export default function CartCoffeesContextProvider({ children }) {
     }
     
       //?---------------IVA--------------------------
-    const ivaCalculate = () => totalSumCart()*0.21.toFixed(2)
+    const ivaCalculate = () => (totalSumCart()*0.21).toFixed(2)
 
 
     return (
-        <CartCoffeesContext.Provider value={{ ivaCalculate, deleteCoffee, totalSumCart, typeShipment, setTypeShipment, onChangeValue, restCoffeeBags, sumCoffeeBags, setTotalBagsCoffees, totalBagsCoffees, sumCoffeeBags, sumPriceCoffee, cartCoffees, totalCoffeesInCart, setCartCoffees, addToCartNoRepeat }}>
+        <CartCoffeesContext.Provider value={{showDelete, setShowDelete, ivaCalculate, deleteCoffee, totalSumCart, typeShipment, setTypeShipment, onChangeValue, restCoffeeBags, sumCoffeeBags, setTotalBagsCoffees, totalBagsCoffees, sumCoffeeBags, sumPriceCoffee, cartCoffees, totalCoffeesInCart, setCartCoffees, addToCartNoRepeat }}>
             {children}
         </CartCoffeesContext.Provider>
     )
