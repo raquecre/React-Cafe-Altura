@@ -9,9 +9,9 @@ const ButtonsAddDelete = (props) => {
 
 	return (
 
-		<div key={coffee.id} className='mb-4 flex flex-row '>
+		<div key={coffee.id} className='mb-4 flex flex-row  flex items-center'>
 			<button onClick={() => { restCoffeeBags(coffee) }} className=' text-2xl  m-2'> - </button>
-			<p className='bg-gray-200 p-1 rounded-full text-center'>{ coffee.bags }</p>
+			<button className='bg-gray-200 border w-7 h-7 rounded-full'>{ coffee.bags }</button>
 			<button onClick={() => { sumCoffeeBags(coffee) }} className='text-2xl  m-2'> + </button>
 
 
