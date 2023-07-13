@@ -4,7 +4,7 @@ import React from 'react';
 const RegistrationSimple = () => {
 
 	return (
-		<section className='m-5 p-3 text-gray-700 flex flex-col m-5'>
+		<section className='m-5 p-3 text-gray-700 flex flex-col m-5 '>
 			<article className=' flex flex-col'>
 				<label id="QuestionName">Nombre completo</label>
 				<input className="border m-2" type="text" />
@@ -24,7 +24,7 @@ const RegistrationSimple = () => {
 				<textarea className="border" defaultValue="¿En qué podemos ayudarte?"/>
 			</article>
 
-			<label className=' m-5'> <input type="checkbox" /> Acepto la <a className='font-bold underline' > Política de Privacidad</a> y los <a className='font-bold underline'>Términos
+			<label className=' m-5 text-sm'> <input type="checkbox" /> Acepto la <a className=' font-bold underline' > Política de Privacidad</a> y los <a className='font-bold underline'>Términos
 				y
 				condiciones.</a>
 			</label>

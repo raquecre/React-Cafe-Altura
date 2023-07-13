@@ -18,7 +18,7 @@ const CoffeeShop = () => {
 			</article>
 
 			<article className="cooffeeShopText m-5 ">
-				<img src="./img/CoffeeBar.png" />
+				<img className='w-auto rounded p-5' src="https://s3-alpha-sig.figma.com/img/4570/2d93/af83409b898246e822c86278c804fd4c?Expires=1690156800&Signature=R-z5K17PGdmLqSpzfSS54L9cNTncvN78sM1EMwegKBfCu95Hiu4Lck87KuFFAnjS6UMH7pqRqv14y~Dfr20-cSsibetuLxrmzK7yqNv9TXzY4p-QrmoKJCm3GNC4vJuqo~voyLTWRrZPlTFlqyRDH4GgHR68Bvv1~HJtbMEOBLntkxPk~5czMNdVoZxA4L0flm1fhU5d1WFVPVs6fYGInpUjRaiSnwu4Jo2Tsw23bOZOT7mMKCzjkJMfxHKiH6ztD3hZtZp5WvGtXaCsmhHfKNfoy02iSn4PyKMxjQHuKkuSAaG7fmeyLyc8zVxA3g4g0IRiRuuqJovFNBTs37TCLA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
 			</article>
 		</section>
 	)

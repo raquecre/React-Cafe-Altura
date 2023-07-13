@@ -7,10 +7,10 @@ const Questions = () => {
 	//TODO Desplegable
 
 	return (
-		<article id='faqsarticle' className='bg-green-800'>
-			<h2 className='text-white text-center text-bold text-3xl'>Preguntas Frecuentes</h2>
+		<article id='faqsarticle' className='bg-green-800 flex flex-col items-center p-10   '>
+			<h2 className='text-white text-center text-bold text-3xl '>Preguntas Frecuentes</h2>
 
-			<div className="cardFaqs bg-white rounded  m-5 p-5">
+			<div className="cardFaqs bg-white rounded w-3/4 mb-3 mt-8 p-5">
 
 
 				<button className="cardFaqstittle text-xl flex flex-row justify-between" data-dropdown-toggle="whoToOrderP" id="whoToOrderH3"> ¿Cómo hago el pedido? <img id="whoToOrderImg"
@@ -27,7 +27,7 @@ const Questions = () => {
 
 			</div>
 
-			<div className="cardFaqs bg-white rounded  m-5 p-5">
+			<div className="cardFaqs bg-white rounded w-3/4 m-3 p-5">
 				<button className="cardFaqstittle text-xl flex flex-row justify-between" data-dropdown-toggle="whyLowPricesP" id="whyLowPricesH3">¿Por qué los precios son tan bajos? <img id="whyLowPricesImg"
 					src="./img/arrowTop.svg" />
 				</button>
@@ -40,7 +40,7 @@ const Questions = () => {
 					detrás de los granos de café recibe el mayor beneficio posible. </p>
 			</div>
 
-			<div className="cardFaqs bg-white rounded  m-5 p-5">
+			<div className="cardFaqs bg-white rounded w-3/4  m-3 p-5">
 				<button className="cardFaqstittle text-xl flex flex-row justify-between"  data-dropdown-toggle="coffeeInOfficeP" id="coffeeInOfficeH3">¿Es posible enviar café a mi oficina? <img
 					id="coffeeInOfficeImg" src="./img/arrowTop.svg" />
 				</button>
@@ -49,7 +49,8 @@ const Questions = () => {
 				<p id="coffeeInOfficeP">Puede ser</p>
 			</div>
 			<div className=' flex flex-row justify-center m-3 ' id="questions">
-				<p className='text-white'>Resolvemos tus dudas </p>
+
+				<p className='text-white underline m-3'>Resolvemos tus dudas </p>
 				<img src="./img/arrowRightWhite.svg" />
 			</div>
 

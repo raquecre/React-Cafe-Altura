@@ -3,6 +3,7 @@ import { AllCoffeesContext } from '../../context/AllCoffees';
 import { useContext } from 'react';
 
 import { CartCoffeesContext } from '../../context/CoofeesInCart';
+import { Link } from 'react-router-dom';
 
 const NewsCoffees = () => {
 	const { totalCoffees } = useContext(AllCoffeesContext)
@@ -19,14 +20,17 @@ const NewsCoffees = () => {
 			<div className=' flex'>
 				{first4Coffees.map((coffee) => {
 					return (
-						<div className=' IndvCoffee border p-3 text-center rounded m-5 w-fit hover:bg-gray-100' key={coffee.id}>
+						<div className=' IndvCoffee border p-3 text-center rounded mt-8 mr-5 w-fit hover:bg-gray-100' key={coffee.id}>
 							<img src={coffee.image} alt='image-coffee-bag' />
 							<p className=' font-bold'>{coffee.name}</p>
 							<p  >{coffee.price},00€</p>
-							<button  onClick={() => addToCartNoRepeat({name:coffee.name, image: coffee.image, price:coffee.price, bags:1})}  className="text-white bg-green-800 hover:bg-green-300 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">Añadir</button>
+							<button  onClick={() => addToCartNoRepeat({name:coffee.name, image: coffee.image, price:coffee.price, bags:1})}  className="text-white bg-green-900 hover:bg-opacity-50 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm p-1 m-3 mt-5">Añadir</button>
 						</div>
 					)
 				})}
+			</div>
+			<div>
+				<Link  className=' flex flex-row justify-center m-5 gap-5 underline ' to={'/Shop'}>Ver todos <img src="./img/arrowRight.svg" /></Link>
 			</div>
 
 		</div>
