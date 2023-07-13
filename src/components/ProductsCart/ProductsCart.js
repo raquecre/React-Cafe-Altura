@@ -3,7 +3,7 @@ import { CartCoffeesContext } from '../../context/CoofeesInCart';
 import ButtonsAddDelete from '../buttons/buttonsAddDelete';
 
 
-const ProductsCart = (props) => {
+const ProductsCart = () => {
 	const { showDelete, deleteCoffee, totalBagsCoffees, cartCoffees, restCoffeeBags, sumCoffeeBags } = useContext(CartCoffeesContext)
 
 	return (
@@ -13,7 +13,7 @@ const ProductsCart = (props) => {
 			{cartCoffees.map((coffee) => {
 				return (
 					<>
-						<div className='  w-full flex items-center justify-between pl-5 mb-4' key={coffee.id} >
+						<div className='  w-full flex items-center justify-between pl-5 mb-4' key={coffee.name} >
 
 							<div className='flex items-center '>
 								{showDelete ? <ButtonsAddDelete coffee={coffee} /> : null}

@@ -3,8 +3,11 @@ import BannerSuccess from "../../components/BannerSucces/BannerSucces"
 import Navigation from "../../components/Navigation/Navigation"
 import ProductsCart from "../../components/ProductsCart/ProductsCart"
 import TotalCart from "../../components/TotalCart/TotalCart"
+import { useContext } from "react"
+import { CartCoffeesContext } from "../../context/CoofeesInCart"
 
 const Success = () => {
+    const { deleteAllCoffees } = useContext(CartCoffeesContext)
 
     return (
         <div className="Success">
@@ -19,7 +22,8 @@ const Success = () => {
             </div>
             <div className=" flex justify-center">
 
-                <Link to={'/'} className="text-white bg-green-800 hover:bg-green-300 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">Volver a la tienda</Link>
+                <Link to={'/Shop'} className="text-white bg-green-800 hover:bg-green-300 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">
+                    <button onClick={deleteAllCoffees()}>Volver a la tienda</button></Link>
             </div>
         </div>
     )
