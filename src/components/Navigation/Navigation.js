@@ -27,10 +27,10 @@ const Navigation = () => {
 				<button type='btn' className='bg-gray-700 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2'> Iniciar Sesión</button>
 			</section>
 
-			<section className="navCart inline-flex">
-				<Link to={'/Cart'} className='flex color-'>
-					<img src="./img/shop.svg" />
-					<p className='bg-gray-800 p-3 m-1 rounded-full'> {totalCoffeesInCart()} </p>
+			<section className="navCart inline-flex text-center ">
+				<Link to={'/Cart'} className='inline-flex text-center'>
+					<img src="./img/shop.svg" className='m-1'/>
+					<p className='bg-gray-800  w-8 h-8 rounded-full'> {totalCoffeesInCart()} </p>
 				</Link>
 			</section>
 
