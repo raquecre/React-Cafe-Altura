@@ -7,7 +7,7 @@ const Questions = () => {
 	//TODO Desplegable
 
 	return (
-		<article id='faqsarticle' className='bg-green-800 flex flex-col items-center p-10   '>
+		<article id='faqsarticle' className='bg-green-900 flex flex-col items-center p-10   '>
 			<h2 className='text-white text-center text-bold text-3xl '>Preguntas Frecuentes</h2>
 
 			<div className="cardFaqs bg-white rounded w-3/4 mb-3 mt-8 p-5">

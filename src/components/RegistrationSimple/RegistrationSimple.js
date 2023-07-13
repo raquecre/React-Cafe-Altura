@@ -29,7 +29,7 @@ const RegistrationSimple = () => {
 				condiciones.</a>
 			</label>
 
-			<button className="text-white bg-green-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">Enviar</button>
+			<button className="text-white w-fit bg-green-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">Enviar</button>
 		</section>
 	)
 }

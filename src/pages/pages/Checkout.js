@@ -8,8 +8,8 @@ import { CartCoffeesContext } from "../../context/CoofeesInCart"
 
 
 const Checkout = () => {
- const {showDelete, setShowDelete } = useContext(CartCoffeesContext)
- setShowDelete(false)
+    const { showDelete, setShowDelete } = useContext(CartCoffeesContext)
+    setShowDelete(false)
 
     return (
         <div className="checkOut ">
@@ -24,12 +24,13 @@ const Checkout = () => {
                 </div>
 
                 <div className="Column2Checkout bg-gray-100 h-fit p-5">
-                <h1 className='font-bold text-lg'>Total del carrito</h1>
+                    <h1 className='font-bold text-lg'>Total del carrito</h1>
                     <hr className='m-4'></hr>
                     <TotalCart />
-                    <div>
-                        <Link to={'/Success'} className="text-white bg-green-900 hover:bg-green-300 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"> Pagar y realizar pedido</Link>
-                    </div>
+
+
+                    <Link to={'/Success'} className="text-white bg-green-900 hover:bg-opacity-50 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"> Pagar y realizar pedido</Link>
+
                 </div>
 
             </div>

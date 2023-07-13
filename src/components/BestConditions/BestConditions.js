@@ -9,7 +9,7 @@ const BestConditions = () => {
 			<div className="cardsBestConditionsTitle  ">
 				<h3 className='text-white text-xl text-center font-bold  '> Café con las mejores condiciones </h3>
 			</div>
-			<div className="cardsBestConditionsCoffee grid grid-cols-3 place-content-center  ">
+			<div className="cardsBestConditionsCoffee grid grid-cols-3 place-content-center justify-items-center ">
 
 				<article className="cardsBestConditions bg-white text-center rounded w-3/4 m-5 p-5">
 					<button className='bg-green-800 m-3 p-3 rounded' ><img src="./img/IconChecklist.png" /></button>
