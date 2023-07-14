@@ -14,8 +14,6 @@ const ButtonsAddDelete = (props) => {
 			<button className='bg-gray-200 border w-7 h-7 rounded-full'>{ coffee.bags }</button>
 			<button onClick={() => { sumCoffeeBags(coffee) }} className='text-2xl  m-2'> + </button>
 
-
-
 		</div>
 
 	)

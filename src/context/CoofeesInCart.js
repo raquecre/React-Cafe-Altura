@@ -1,9 +1,6 @@
 
 import { createContext, useState } from "react"
 
-//~  lógica añadir un café más
-//~  lógica quitar un café
-//~ suma total de los cafés
 
 export const CartCoffeesContext = createContext();
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 //import mano from '../../../public/img/mano.png'
 
 
@@ -15,7 +16,7 @@ const PlantTaze = () => {
 					puedas viajar desde la comodidad de tu hogar.</p>
 				<div className='mt-3'>
 					<button className="text-white bg-gray-950 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2" id="plantTazeBlack">Descubrir orígenes</button>
-					<button className="text-white bg-green-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2" id="plantTazeGreen">Comprar café</button>
+					<Link to={'/Shop'} className="text-white bg-green-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2" id="plantTazeGreen">Comprar café</Link>
 				</div>
 			</article>
 			<article className='p-5 w-3/4 mt-3 mb-3 '>
