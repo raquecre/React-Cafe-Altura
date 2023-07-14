@@ -10,7 +10,7 @@ const SelectPaymentMethod = () => {
 
 			<div className='inputDebito mt-2'>
 				<div className='Header flex '>
-					<input type="radio" name="typeOfSend" value="debito" />
+					<input type="radio" className='accent-green-700 w-' name="typeOfSend" value="debito" />
 
 					<div className='infoInput ml-2'>
 						<p className='font-bold'> Tarjeta de débito</p>
@@ -21,22 +21,22 @@ const SelectPaymentMethod = () => {
 				<div className='mt-4 '>
 					<div className=' flex flex-col'>
 						<label id="QuestionName">Titular</label>
-						<input className="border m-2 rounded" type="text" placeholder='Nombre del titular' />
+						<input className="border m-2 rounded w-fit" type="text" placeholder='Nombre del titular' />
 					</div>
 					<div className=' flex flex-col'>
 						<label id="QuestionName">Número de la tarjeta</label>
-						<input className="border m-2 rounded" type="number" placeholder='1234 1234 1234 1234' />
+						<input className="border m-2 rounded w-fit" type="number" placeholder='1234 1234 1234 1234' />
 					</div>
 
-					<div className=' flex flex-col flex'>
-						<>
+					<div className=' flex justify-start '>
+						<div className='flex flex-col w-auto w-40'>
 							<label id="QuestionName">Fecha de caducidad</label>
-							<input className="border m-2 w-fit" type="numbar" placeholder='MM/YY' />
-						</>
-						<>
+							<input className="border mt-2 w-30" type="numbar" placeholder='MM/YY' />
+						</div>
+						<div className='flex flex-col w-fit'>
 							<label id="QuestionName">CVC</label>
-							<input className="border m-2 w-fit rounded" type="number" placeholder='123' />
-						</>
+							<input className="border m-2  w-1/2 rounded" type="number" placeholder='123' />
+						</div>
 					</div>
 				</div>
 
@@ -45,7 +45,7 @@ const SelectPaymentMethod = () => {
 			
 			<div className='inputTransfer '>
 				<div className='Header flex '>
-					<input type="radio" name="typeOfSend" value="transfer" />
+					<input type="radio" className='accent-green-700' name="typeOfSend" value="transfer" />
 
 					<div className='infoInput ml-2'>
 						<p className='font-bold'> Transferencia bancaria a la cuenta ES12 1234 1234 123457890</p>
@@ -59,7 +59,7 @@ const SelectPaymentMethod = () => {
 			
 			<div className='inputBizum  '>
 				<div className='Header flex'>
-					<input type="radio" name="typeOfSend" value="Bizum" />
+					<input type="radio" className='accent-green-700' name="typeOfSend" value="Bizum" />
 
 					<div className='infoInput flex gap-4 ml-2'>
 						<p className='font-bold flex items-center'>Bizum</p>

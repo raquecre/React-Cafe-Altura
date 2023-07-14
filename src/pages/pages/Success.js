@@ -22,7 +22,7 @@ const Success = () => {
             </div>
             <div className=" flex justify-center">
 
-                <Link to={'/Shop'} className="text-white bg-green-800 hover:bg-opacity-50 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">
+                <Link to={'/Shop'} className="text-white bg-green-800 bg-opacity-50 hover:bg-opacity-100 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">
                     <button onClick={() => deleteAllCoffees()}>Volver a la tienda</button></Link>
             </div>
         </div>

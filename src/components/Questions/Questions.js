@@ -73,7 +73,7 @@ const Questions = () => {
 					</>}
 			</div>
 
-			<div className="cardFaqs bg-white flex flex-col justify-between rounded w-3/4  m-3 p-5">
+			<div className="cardFaqs bg-white flex flex-col justify-between rounded w-3/4  m-2 p-5">
 				<button className="cardFaqstittle text-xl flex flex-row justify-between" onClick={() => showP3()} id="coffeeInOfficeH3">¿Es posible enviar café a mi oficina? <img
 					id="coffeeInOfficeImg" src="./img/arrowTop.svg" />
 				</button>
@@ -87,7 +87,7 @@ const Questions = () => {
 			</div>
 			<div className=' flex flex-row justify-center m-3 ' id="questions">
 
-				<p className='text-white underline m-3'>Resolvemos tus dudas </p>
+				<p className='text-white underline p-2'>Resolvemos tus dudas </p>
 				<img src="./img/arrowRightWhite.svg" />
 			</div>
 

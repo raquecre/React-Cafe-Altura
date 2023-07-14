@@ -14,7 +14,7 @@ const TypeShipment = () => {
 
 			<div className='form-check flex justify-between  '>
 				<div className='flex gap-5'>
-					<input id="freeSend" type="radio" name="typeOfSend" value="0" onChange={onChangeValue} checked={typeShipment === "0"} />
+					<input  type="radio" className='accent-green-700' value="0" onChange={onChangeValue} checked={typeShipment === "0"} />
 
 					<label className='flex flex-col '>
 						<p className='font-bold'> Envío 5-7días</p>
@@ -31,7 +31,7 @@ const TypeShipment = () => {
 
 			<div className='form-check flex justify-between mt-5'>
 				<div className='flex gap-5'>
-					<input id="cost9" type="radio" name="typeOfSend" value="9" onChange={onChangeValue} checked={typeShipment === "9"} />
+					<input className='accent-green-700' type="radio"  value="9" onChange={onChangeValue} checked={typeShipment === "9"} />
 					<label className='flex flex-col align-center'  >
 						<p className='font-bold' >Envío urgente 24h</p>
 						<p >Recibe tu pedido en las siguientes 24h (Para pedidos realizados

@@ -9,9 +9,8 @@ const TotalCart = () => {
 
 
 	return (
-		<div className='totalCart bg-gray-100 pt-4 pl-2 ' >
+		<div className='totalCart pt-4 pl-2 m-7 ' >
 		
-
 			<div className="flex p-2 justify-between pr-4">
 				<p className=' mr-5'>SUBTOTAL</p>
 				<p className='font-bold ml-5'> {sumPriceCoffee()},00 €</p>
@@ -30,7 +29,7 @@ const TotalCart = () => {
 				<p className=' mr-5'>TOTAL</p>
 				<p className='font-bold ml-5'>{totalSumCart()},00€</p>
 			</div>
-			<div className='mb-5 text-sm flex justify-end text-gray-500'>
+			<div className='mb-5 text-sm pr-4 flex justify-end text-gray-500'>
 				<p> Incluye  {ivaCalculate()} € de IVA</p>
 			</div>
 

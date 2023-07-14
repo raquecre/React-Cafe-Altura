@@ -10,8 +10,8 @@ const PlantTaze = () => {
 		<section className="plantTaze flex flex-row h-auto">
 
 			<article className="plantTaze flex flex-col p-4 justify-center m-3">
-				<h3 className='text-green-800'> De la planta a tu taza</h3>
-				<h1 className='text-4xl font-bold'>El mejor café del mundo, ahora en tu casa.</h1>
+				<h3 className='text-green-800 font-semibold'> De la planta a tu taza</h3>
+				<h1 className='text-4xl font-semibold'>El mejor café del mundo, ahora en tu casa.</h1>
 				<p>Trabajamos con agricultores de todo el mundo para seleccionar los mejores granos de café y que
 					puedas viajar desde la comodidad de tu hogar.</p>
 				<div className='mt-3'>

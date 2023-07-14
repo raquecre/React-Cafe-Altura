@@ -28,9 +28,9 @@ const Cart = () => {
                     </div>
                     <TypeShipment />
                 </div>
-                <div className='bg-gray-100 '>
-                    <h1 className='font-bold text-lg'>Total del carrito</h1>
-                    <hr className='m-4'></hr>
+                <div className='bg-gray-100 h-fit pb-8 '>
+                    <h1 className='font-bold text-lg mt-5 ml-2'>Total del carrito</h1>
+                    <hr className='m-2'></hr>
                     <TotalCart className='w-fit' />
                     <div className='mt-5 pl-2'>
                         <Link to={'/CheckOut'} className="text-white bg-green-900 hover:bg-opacity-50 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"> Ir al checkout</Link>

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
 
 	return (
-		<footer className=" bg-gray-950 text-white pt-3 flex items-center  justify-stretch">
+		<footer className=" bg-gray-950 text-white pt-3 flex items-center pb-8 justify-stretch">
 
 			<section className='pt-5 pl-5'>
 				<article className='inline-flex gap-1'>
@@ -16,9 +16,9 @@ const Footer = () => {
 
 				<article className=" gap-2 items-center flex flex-row justify-start">
 
-					<div className=" inline-flex gap-2 items-center flex flex-col mt-8 ">
+					<div className=" inline-flex gap-2 items-start flex flex-col mt-5 ">
 
-						<section className='flex flex-col items-start mr-8 ' >
+						<section className='flex flex-col items-start  ' >
 							<p> Te ayudamos en </p>
 							<button className='mt-1 gap-1 bg-gray-700 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 inline-flex'><img src="/img/Phone.png" />+34 919 49 05
 								18</button>
@@ -27,7 +27,7 @@ const Footer = () => {
 
 					</div>
 
-					<div className='flex flex-row  justify-start gap-40 ml-20 p-10'>
+					<div className='flex flex-row  justify-center gap-40 ml-20 pt-6 '>
 						<ul >
 							<li>Tienda</li>
 							<li>Suscripción</li>
