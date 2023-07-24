@@ -49,9 +49,7 @@ export default function CartCoffeesContextProvider({ children }) {
     }
 
     //?-----------counter coffees---------------------
-array.forEach(element => {
-    
-});
+
     //?---SUM---------------------
     const sumCoffeeBags = (coffeSelect) => {
         return cartCoffees.forEach(cartItem => {
