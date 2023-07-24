@@ -18,12 +18,12 @@ const ContactUsForm = () => {
 			</div>
 
 			<div className='text-gray-600 m-5 flex flex-inline gap-3'>
-				<img  src="./img/Phone.png" />
+				<img alt='' src="./img/Phone.png" />
 				<p  id="contactPhone"> +1 (555) 123-4567</p>
 			</div>
 
 			<div className='text-gray-600 m-5 flex flex-inline gap-3'>
-				<img  src="./img/MailGrey.svg" />
+				<img alt='' src="./img/MailGrey.svg" />
 				<p >support@example.com</p>
 			</div>
 			<div className='text-gray-600 m-5 flex flex-inline '>

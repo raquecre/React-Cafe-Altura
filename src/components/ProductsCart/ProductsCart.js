@@ -1,10 +1,10 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { CartCoffeesContext } from '../../context/CoofeesInCart';
 import ButtonsAddDelete from '../buttons/buttonsAddDelete';
 
 
 const ProductsCart = () => {
-	const { showDelete, deleteCoffee, totalBagsCoffees, cartCoffees, restCoffeeBags, sumCoffeeBags } = useContext(CartCoffeesContext)
+	const { showDelete } = useContext(CartCoffeesContext)
 
 	return (
 
@@ -17,7 +17,7 @@ const ProductsCart = () => {
 
 							<div className='flex items-center '>
 								{showDelete ? <ButtonsAddDelete coffee={coffee} /> : null}
-								<img className='h-20' src={coffee.image} />
+								<img alt='' className='h-20' src={coffee.image} />
 								<div className='flex-col pl-5'>
 									<p className='font-bold' >{coffee.name}</p>
 									<p >Paquete de café, 250gr</p>

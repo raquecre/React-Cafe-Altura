@@ -11,7 +11,7 @@ const Footer = () => {
 			<section className='pt-5 pl-5'>
 				<article className='inline-flex gap-1'>
 					<Link to={'/'} className="text-2xl" >cafedealtura.com</Link>
-					<img src="./img/CoffeG.svg" />
+					<img alt='' src="./img/CoffeG.svg" />
 				</article>
 
 				<article className=" gap-2 items-center flex flex-row justify-start">
@@ -20,9 +20,9 @@ const Footer = () => {
 
 						<section className='flex flex-col items-start  ' >
 							<p> Te ayudamos en </p>
-							<button className='mt-1 gap-1 bg-gray-700 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 inline-flex'><img src="/img/Phone.png" />+34 919 49 05
+							<button className='mt-1 gap-1 bg-gray-700 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 inline-flex'><img alt='' src="/img/Phone.png" />+34 919 49 05
 								18</button>
-							<button className=' gap-1 bg-gray-700 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 inline-flex'><img src="/img/email.png" />hola@cafedealtura.com</button>
+							<button className=' gap-1 bg-gray-700 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 inline-flex'><img alt='' src="/img/email.png" />hola@cafedealtura.com</button>
 						</section>
 
 					</div>

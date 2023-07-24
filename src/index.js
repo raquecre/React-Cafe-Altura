@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 
 import { BrowserRouter as Router } from 'react-router-dom'; // <== IMPORT
-import AllCoffeesContextProvider, { AllCoffeesContext } from './context/AllCoffees';
+import AllCoffeesContextProvider from './context/AllCoffees';
 import CartCoffeesContextProvider from './context/CoofeesInCart';
 
 

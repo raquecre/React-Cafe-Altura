@@ -1,7 +1,7 @@
 import React from 'react';
 import { CartCoffeesContext } from '../../context/CoofeesInCart';
 import { useContext } from 'react';
-import { Link } from 'react-router-dom';
+
 
 
 const TotalCart = () => {

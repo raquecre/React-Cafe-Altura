@@ -11,7 +11,7 @@ const Navigation = () => {
 
 			<section className=" inline-flex gap-2 items-center ">
 				<Link to={'/'} className="text-2xl" >cafedealtura.com</Link>
-				<img src="./img/CoffeG.svg" />
+				<img alt='' src="./img/CoffeG.svg" />
 			</section>
 
 			<section className='inline-flex gap-9 ' id="navUl">
@@ -23,13 +23,13 @@ const Navigation = () => {
 			</section>
 
 			<section className="navContactPhone flex items-center gap-10">
-				<p><img src='' />+34 919 49 05 18</p>
+				<p><img alt='' src='' />+34 919 49 05 18</p>
 				<button type='btn' className='bg-gray-700 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2'> Iniciar Sesión</button>
 			</section>
 
 			<section className="navCart inline-flex text-center ">
 				<Link to={'/Cart'} className='inline-flex text-center'>
-					<img src="./img/shop.svg" className='m-1' />
+					<img alt='' src="./img/shop.svg" className='m-1' />
 					<p className='bg-gray-800  w-8 h-8 rounded-full'> {totalCoffeesInCart()} </p>
 				</Link>
 			</section>

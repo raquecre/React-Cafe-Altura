@@ -7,7 +7,7 @@ const Questions = () => {
 	const [isOpen3, setIsOpen3] = useState(false)
 
 	function showP() {
-		if (isOpen == false) {
+		if (isOpen === false) {
 			setIsOpen(true)
 		} else {
 			setIsOpen(false)
@@ -15,7 +15,7 @@ const Questions = () => {
 
 	}
 	function showP2() {
-		if (isOpen2 == false) {
+		if (isOpen2 === false) {
 			setIsOpen2(true)
 		} else {
 			setIsOpen2(false)
@@ -23,7 +23,7 @@ const Questions = () => {
 
 	}
 	function showP3() {
-		if (isOpen3 == false) {
+		if (isOpen3 === false) {
 			setIsOpen3(true)
 		} else {
 			setIsOpen3(false)
@@ -39,7 +39,7 @@ const Questions = () => {
 
 			<div className="cardFaqs bg-white flex flex-col justify-between rounded w-3/4 mb-3 mt-8 p-5">
 
-				<button className="cardFaqstittle text-xl flex flex-row justify-between " onClick={() => showP()} > ¿Cómo hago el pedido? <img id="whoToOrderImg"
+				<button className="cardFaqstittle text-xl flex flex-row justify-between " onClick={() => showP()} > ¿Cómo hago el pedido? <img alt='' id="whoToOrderImg"
 					src="./img/arrowTop.svg" />
 				</button>
 
@@ -58,7 +58,7 @@ const Questions = () => {
 			</div>
 
 			<div className="cardFaqs bg-white flex flex-col justify-between rounded w-3/4 m-3 p-5">
-				<button className="cardFaqstittle text-xl flex flex-row justify-between" onClick={() => showP2()} id="whyLowPricesH3">¿Por qué los precios son tan bajos? <img id="whyLowPricesImg"
+				<button className="cardFaqstittle text-xl flex flex-row justify-between" onClick={() => showP2()} id="whyLowPricesH3">¿Por qué los precios son tan bajos? <img alt='' id="whyLowPricesImg"
 					src="./img/arrowTop.svg" />
 				</button>
 
@@ -74,7 +74,7 @@ const Questions = () => {
 			</div>
 
 			<div className="cardFaqs bg-white flex flex-col justify-between rounded w-3/4  m-2 p-5">
-				<button className="cardFaqstittle text-xl flex flex-row justify-between" onClick={() => showP3()} id="coffeeInOfficeH3">¿Es posible enviar café a mi oficina? <img
+				<button className="cardFaqstittle text-xl flex flex-row justify-between" onClick={() => showP3()} id="coffeeInOfficeH3">¿Es posible enviar café a mi oficina? <img alt=''
 					id="coffeeInOfficeImg" src="./img/arrowTop.svg" />
 				</button>
 
@@ -88,7 +88,7 @@ const Questions = () => {
 			<div className=' flex flex-row justify-center m-3 ' id="questions">
 
 				<p className='text-white underline p-2'>Resolvemos tus dudas </p>
-				<img src="./img/arrowRightWhite.svg" />
+				<img alt='' src="./img/arrowRightWhite.svg" />
 			</div>
 
 		</article>
