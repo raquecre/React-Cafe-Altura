@@ -27,7 +27,7 @@ export default function CartCoffeesContextProvider({ children }) {
 
     const addToCartNoRepeat = (coffeeInfo) => {
         if (cartCoffees == null || !isCoffeRepeated(coffeeInfo)) {
-            setCartCoffees([...cartCoffees, coffeeInfo]);
+            return  setCartCoffees([...cartCoffees, coffeeInfo]);
         }
     }
 
@@ -82,14 +82,14 @@ export default function CartCoffeesContextProvider({ children }) {
     //?----------delete coffee  ---------------------
 
     const deleteCoffee = (coffeinfo) => {
-        const newCart = cartCoffees.filter(coffeeDelete => coffeeDelete !== coffeinfo)                    
-        setCartCoffees(newCart)
+        const newCart = cartCoffees.filter(coffeeDelete => coffeeDelete !== coffeinfo);                   
+        return setCartCoffees(newCart)
       
     }
     //?----------delete all coffees  ---------------------
 
     const deleteAllCoffees = () => {
-        setCartCoffees([])
+       return setCartCoffees([])
     }
 
 
@@ -98,7 +98,7 @@ export default function CartCoffeesContextProvider({ children }) {
     const [typeShipment, setTypeShipment] = useState("0")
 
     const onChangeValue = e => {
-        setTypeShipment(e.target.value)
+       return setTypeShipment(e.target.value)
     }
     
       //?---------------IVA--------------------------
