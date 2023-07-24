@@ -12,7 +12,7 @@ export default function CartCoffeesContextProvider({ children }) {
     //?----------TotalCart ---------------------
 
     const totalCoffeesInCart = () => {
-        return cartCoffees.length 
+        return cartCoffees.length
     }
     //?-----------AddCart coffees no repeat---------------------
 
@@ -27,7 +27,7 @@ export default function CartCoffeesContextProvider({ children }) {
 
     const addToCartNoRepeat = (coffeeInfo) => {
         if (cartCoffees == null || !isCoffeRepeated(coffeeInfo)) {
-            return  setCartCoffees([...cartCoffees, coffeeInfo]);
+            return setCartCoffees([...cartCoffees, coffeeInfo]);
         }
     }
 
@@ -52,10 +52,10 @@ export default function CartCoffeesContextProvider({ children }) {
 
     //?---SUM---------------------
     const sumCoffeeBags = (coffeSelect) => {
-        cartCoffees.map((cartItem) => {
+        return cartCoffees.map((cartItem) => {
             if (cartItem.name === coffeSelect.name) {
                 cartItem.bags += 1;
-               return setCartCoffees([...cartCoffees]);
+                return setCartCoffees([...cartCoffees]);
             }
         }
         )
@@ -64,15 +64,15 @@ export default function CartCoffeesContextProvider({ children }) {
 
     //?---Rest---------------------
     const restCoffeeBags = (coffeSelect) => {
-        cartCoffees.map((cartItem) => {
+       return cartCoffees.map((cartItem) => {
             if (cartItem.name === coffeSelect.name) {
                 if (cartItem.bags > 1) {
                     cartItem.bags -= 1
-               return setCartCoffees([...cartCoffees]);
-                   
+                    return setCartCoffees([...cartCoffees]);
+
                 } else {
-                   
-                   return deleteCoffee(cartItem);
+
+                    return deleteCoffee(cartItem);
                 }
 
             }
@@ -82,14 +82,14 @@ export default function CartCoffeesContextProvider({ children }) {
     //?----------delete coffee  ---------------------
 
     const deleteCoffee = (coffeinfo) => {
-        const newCart = cartCoffees.filter(coffeeDelete => coffeeDelete !== coffeinfo);                   
+        const newCart = cartCoffees.filter(coffeeDelete => coffeeDelete !== coffeinfo);
         return setCartCoffees(newCart)
-      
+
     }
     //?----------delete all coffees  ---------------------
 
     const deleteAllCoffees = () => {
-       return setCartCoffees([])
+        return setCartCoffees([])
     }
 
 
@@ -98,15 +98,15 @@ export default function CartCoffeesContextProvider({ children }) {
     const [typeShipment, setTypeShipment] = useState("0")
 
     const onChangeValue = e => {
-       return setTypeShipment(e.target.value)
+        return setTypeShipment(e.target.value)
     }
-    
-      //?---------------IVA--------------------------
-    const ivaCalculate = () => (totalSumCart()*0.21).toFixed(2)
+
+    //?---------------IVA--------------------------
+    const ivaCalculate = () => (totalSumCart() * 0.21).toFixed(2)
 
 
     return (
-        <CartCoffeesContext.Provider value={{showDelete,deleteAllCoffees, setShowDelete, ivaCalculate, deleteCoffee, totalSumCart, typeShipment, setTypeShipment, onChangeValue, restCoffeeBags, setTotalBagsCoffees, totalBagsCoffees, sumCoffeeBags, sumPriceCoffee, cartCoffees, totalCoffeesInCart, setCartCoffees, addToCartNoRepeat }}>
+        <CartCoffeesContext.Provider value={{ showDelete, deleteAllCoffees, setShowDelete, ivaCalculate, deleteCoffee, totalSumCart, typeShipment, setTypeShipment, onChangeValue, restCoffeeBags, setTotalBagsCoffees, totalBagsCoffees, sumCoffeeBags, sumPriceCoffee, cartCoffees, totalCoffeesInCart, setCartCoffees, addToCartNoRepeat }}>
             {children}
         </CartCoffeesContext.Provider>
     )
