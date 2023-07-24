@@ -4,7 +4,7 @@ import ButtonsAddDelete from '../buttons/buttonsAddDelete';
 
 
 const ProductsCart = () => {
-	const { showDelete } = useContext(CartCoffeesContext)
+	const { showDelete, cartCoffees } = useContext(CartCoffeesContext)
 
 	return (
 
