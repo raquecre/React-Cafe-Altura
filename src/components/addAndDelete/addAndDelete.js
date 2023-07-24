@@ -1,6 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './addAndDelete.scss';
+
 
 const addAndDelete = props => (
 	<div>This is a component called addAndDelete.</div>

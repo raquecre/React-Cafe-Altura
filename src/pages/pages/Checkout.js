@@ -8,7 +8,7 @@ import { CartCoffeesContext } from "../../context/CoofeesInCart"
 
 
 const Checkout = () => {
-    const { showDelete, setShowDelete } = useContext(CartCoffeesContext)
+    const { setShowDelete } = useContext(CartCoffeesContext)
     setShowDelete(false)
 
     return (

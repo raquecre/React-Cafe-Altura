@@ -5,7 +5,7 @@ import { CartCoffeesContext } from '../../context/CoofeesInCart';
 
 const LastOrigins = () => {
 	const { totalCoffees } = useContext(AllCoffeesContext)
-	const { cartCoffees, addToCartNoRepeat, setCartCoffees } = useContext(CartCoffeesContext)
+	const { addToCartNoRepeat, } = useContext(CartCoffeesContext)
 
 	return (
 		<div className='lastOriginsAllCoffees'>

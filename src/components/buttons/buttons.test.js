@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow, render, mount } from 'enzyme';
-import buttons from './buttons';
+
 
 describe('buttons', () => {
   let props;

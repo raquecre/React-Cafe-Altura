@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { CartCoffeesContext } from '../../context/CoofeesInCart';
 
 
 const Navigation = () => {
 	const { totalCoffeesInCart } = useContext(CartCoffeesContext)
-	
+
 	return (
 		<div className='Navigation d-flex bg-gray-950 text-white gap-10 p-3 flex items-center'>
 
@@ -29,7 +29,7 @@ const Navigation = () => {
 
 			<section className="navCart inline-flex text-center ">
 				<Link to={'/Cart'} className='inline-flex text-center'>
-					<img src="./img/shop.svg" className='m-1'/>
+					<img src="./img/shop.svg" className='m-1' />
 					<p className='bg-gray-800  w-8 h-8 rounded-full'> {totalCoffeesInCart()} </p>
 				</Link>
 			</section>
