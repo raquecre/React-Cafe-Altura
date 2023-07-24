@@ -49,10 +49,12 @@ export default function CartCoffeesContextProvider({ children }) {
     }
 
     //?-----------counter coffees---------------------
-
+array.forEach(element => {
+    
+});
     //?---SUM---------------------
     const sumCoffeeBags = (coffeSelect) => {
-        return cartCoffees?.map((cartItem) => {
+        return cartCoffees.forEach(cartItem => {
             if (cartItem.name === coffeSelect.name) {
                 cartItem.bags += 1;
                 return setCartCoffees([...cartCoffees]);
@@ -64,7 +66,7 @@ export default function CartCoffeesContextProvider({ children }) {
 
     //?---Rest---------------------
     const restCoffeeBags = (coffeSelect) => {
-       return cartCoffees?.map((cartItem) => {
+       return cartCoffees.forEach(cartItem => {
             if (cartItem.name === coffeSelect.name) {
                 if (cartItem.bags > 1) {
                     cartItem.bags -= 1
