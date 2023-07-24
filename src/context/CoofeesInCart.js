@@ -55,7 +55,7 @@ export default function CartCoffeesContextProvider({ children }) {
         cartCoffees.map((cartItem) => {
             if (cartItem.name === coffeSelect.name) {
                 cartItem.bags += 1;
-                setCartCoffees([...cartCoffees]);
+               return setCartCoffees([...cartCoffees]);
             }
         }
         )
@@ -68,11 +68,11 @@ export default function CartCoffeesContextProvider({ children }) {
             if (cartItem.name === coffeSelect.name) {
                 if (cartItem.bags > 1) {
                     cartItem.bags -= 1
-                setCartCoffees([...cartCoffees]);
+               return setCartCoffees([...cartCoffees]);
                    
                 } else {
                    
-                    deleteCoffee(cartItem);
+                   return deleteCoffee(cartItem);
                 }
 
             }
@@ -106,7 +106,7 @@ export default function CartCoffeesContextProvider({ children }) {
 
 
     return (
-        <CartCoffeesContext.Provider value={{showDelete,deleteAllCoffees, setShowDelete, ivaCalculate, deleteCoffee, totalSumCart, typeShipment, setTypeShipment, onChangeValue, restCoffeeBags, sumCoffeeBags, setTotalBagsCoffees, totalBagsCoffees, sumCoffeeBags, sumPriceCoffee, cartCoffees, totalCoffeesInCart, setCartCoffees, addToCartNoRepeat }}>
+        <CartCoffeesContext.Provider value={{showDelete,deleteAllCoffees, setShowDelete, ivaCalculate, deleteCoffee, totalSumCart, typeShipment, setTypeShipment, onChangeValue, restCoffeeBags, setTotalBagsCoffees, totalBagsCoffees, sumCoffeeBags, sumPriceCoffee, cartCoffees, totalCoffeesInCart, setCartCoffees, addToCartNoRepeat }}>
             {children}
         </CartCoffeesContext.Provider>
     )

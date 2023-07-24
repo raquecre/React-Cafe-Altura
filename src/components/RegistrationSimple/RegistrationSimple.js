@@ -24,7 +24,7 @@ const RegistrationSimple = () => {
 				<textarea className="border" defaultValue="¿En qué podemos ayudarte?"/>
 			</article>
 
-			<label className=' m-5 text-s'> <input type="checkbox" /> Acepto la <a className=' font-bold underline ' > Política de Privacidad</a> y los <a className='font-bold underline'>Términos
+			<label className=' m-5 text-s'> <input type="checkbox" /> Acepto la <a href='https://politicadeprivacidadplantilla.com/' className=' font-bold underline ' > Política de Privacidad</a> y los <a href='https://politicadeprivacidadplantilla.com/' className='font-bold underline'>Términos
 				y
 				condiciones.</a>
 			</label>

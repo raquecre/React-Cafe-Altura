@@ -63,7 +63,7 @@ const SelectPaymentMethod = () => {
 
 					<div className='infoInput flex gap-4 ml-2'>
 						<p className='font-bold flex items-center'>Bizum</p>
-						<img className='w-20' src='https://s3-alpha-sig.figma.com/img/ac24/1476/8585bb1a45512ace6bc15136b9de741c?Expires=1690156800&Signature=PSTU8oxhzuEwHcCz0klzUE3qY1Z2-IsJfcIItC6~6mBGjqQBQDu7jTm8Kfk~gFufx-c3syc8REauticu7C8iwpUM2RuiA~HQTeGhLbeHYqk2RX0a3GI0WYNCBY551IHdzfy1OYXbOPHGAKUlNeRXBuQA3waQnd200GlyYgc0WKH~f67wXcr4evJC0Z-gKtrN8dIdGjMJT61I3VnlbJwrox-6e6iQSzMxBhJ~FG8FuEKooA3kG6hfgjPjFUt0pe-FElFXwNzJHe8HfzhHSmREapeSTjMi481RYe9uTz0lO9SE9oys36D1k~wdkVjWIpEh24X38jx2OScu~VzWDOE7cw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4' />
+						<img alt='' className='w-20' src='https://s3-alpha-sig.figma.com/img/ac24/1476/8585bb1a45512ace6bc15136b9de741c?Expires=1690156800&Signature=PSTU8oxhzuEwHcCz0klzUE3qY1Z2-IsJfcIItC6~6mBGjqQBQDu7jTm8Kfk~gFufx-c3syc8REauticu7C8iwpUM2RuiA~HQTeGhLbeHYqk2RX0a3GI0WYNCBY551IHdzfy1OYXbOPHGAKUlNeRXBuQA3waQnd200GlyYgc0WKH~f67wXcr4evJC0Z-gKtrN8dIdGjMJT61I3VnlbJwrox-6e6iQSzMxBhJ~FG8FuEKooA3kG6hfgjPjFUt0pe-FElFXwNzJHe8HfzhHSmREapeSTjMi481RYe9uTz0lO9SE9oys36D1k~wdkVjWIpEh24X38jx2OScu~VzWDOE7cw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4' />
 					</div>
 
 				</div>

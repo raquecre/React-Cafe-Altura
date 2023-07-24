@@ -4,7 +4,7 @@ import { CartCoffeesContext } from '../../context/CoofeesInCart';
 
 const ButtonsAddDelete = (props) => {
 	const {coffee} = props
-	const { cartCoffees, restCoffeeBags, sumCoffeeBags } = useContext(CartCoffeesContext)
+	const {restCoffeeBags, sumCoffeeBags } = useContext(CartCoffeesContext)
 
 
 	return (

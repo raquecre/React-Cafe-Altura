@@ -4,7 +4,7 @@ import { CartCoffeesContext } from '../../context/CoofeesInCart';
 
 
 const TypeShipment = () => {
-	const { typeShipment, setTypeShipment, onChangeValue } = useContext(CartCoffeesContext);
+	const { typeShipment, onChangeValue } = useContext(CartCoffeesContext);
 
 
 	return (
