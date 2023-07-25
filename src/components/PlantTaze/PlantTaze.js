@@ -20,7 +20,7 @@ const PlantTaze = () => {
 				</div>
 			</article>
 			<article className='p-5 w-3/4 mt-3 mb-3 '>
-				<img className='rounded-lg' id="grainsOnTree" src="https://s3-alpha-sig.figma.com/img/a303/6137/8668558bbdbaf8f6c6c4062d03e662e5?Expires=1690156800&Signature=gUYLLx5Ke29hsgiRhXHJp1ZL7BTkfSpPcR6MZU7x9sEgNiebrPDBNy0uWaGS1FV1V2yc3GD-o8WoKhVnEPysrwtwvLRf7LCv6B-dVgjAgiN4lD1IPgWGBQt7c09cv0zvMRhKF9V9pUoa3yDmULK7eeCQLymMND-GXwgzFw5L0UjKPsp8SOViQFoV6mdlLkN4tzpKRElDePl1i-4DfUo5JmmMgn52kLpDDGy~k3zK5TERqy-iIppGh5FVTRPVWe4dWXv~aJGATlUurz~JRmJl9gR2JNTk5g8aN9v20Vs4z98eNiTICna97dqTPg4-N7qYYIWOfu72iM8A911vcYz1OQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="mano cogiendo fruto de un arbol" />
+				<img className='rounded-lg' id="grainsOnTree" src="https://i.imgur.com/IUimeS0.jpg" alt="mano cogiendo fruto de un arbol" />
 			</article>
 
 
