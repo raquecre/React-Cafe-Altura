@@ -4,7 +4,7 @@ import React from 'react';
 const BestConditions = () => {
 
 	return (
-		<section className="p-5  cardsBestConditions bg-center bg-cover bg-auto bg-[url('https://s3-alpha-sig.figma.com/img/03a7/c79a/086aa1e226e5adfe010fd0fb3ff3e2cb?Expires=1690156800&Signature=CIKUcpBbruPWP6FGc5B2Afnoksu0GAMQkcJuua5BT3AL4nglGZNmt90FF8vNT0jrccYWX~kr1DptkXK7LIBT0f0aNmunhIaFtKO28ExLwZYLFB036Pq~Ec0liAh013vVMA9LOil8fIs5zO3dCeDlriC7rUNGe~2FtS8k1xYFQmUGJWvMamTYQ4esJEteKtq9cUsQwZfk2AArLJpJFcv0qS485d0rqhDWuuZM5SGBZ8LP1FvSB-w~X-GHexdakTz7WWkINwtqqiTF56VuY58r8lcBGoPO0zeMHsNBepE7iZQtw~pISO~psalpCKoHsnmHFgH6THMHkQuq-JNfia-nsQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4')]">
+		<section className="p-5  cardsBestConditions bg-center bg-cover bg-auto bg-[url('https://i.imgur.com/K1K7nMs.jpg')]">
 
 			<div className="cardsBestConditionsTitle mt-5  ">
 				<h3 className='text-white text-2xl text-center font-bold  '> Café con las mejores condiciones </h3>

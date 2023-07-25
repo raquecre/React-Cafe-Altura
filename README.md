@@ -17,7 +17,7 @@ Realizado con Tailwind CSS.
 
 
 
-## Authors
+## Autora
 
   - **Raquel Crespo** - *Realizado durante el curso en [gamma tech School](https://www.gammatech.school/).* 
     
